@@ -1,6 +1,6 @@
 require 'pry'
 
-  # This is the array we will be passing into the remove_strawberry method
+  # This is the hash we will be passing into the remove_strawberry method
   # contacts = {
   #   "Jon Snow" => {
   #     name: "Jon",
@@ -15,5 +15,11 @@ require 'pry'
   # }
   
 def remove_strawberry(contacts)
-
+  contacts.each do |person, contacts_details_hash|
+    contacts_details_hash.each do |attribute, data|
+      if attribute == :favorite_icecream_flavors
+        data.delete_if { |ice_creame| ice_creame == "strawberry" }
+      end
+    end
+  end
 end
