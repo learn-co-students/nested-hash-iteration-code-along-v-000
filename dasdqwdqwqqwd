@@ -1,0 +1,11 @@
+
+[1mFrom:[0m /home/nitrous/code/labs/nested-hash-iteration-code-along-v-000/lib/contacts.rb @ line 22 Object#remove_strawberry:
+
+    [1;34m19[0m: [32mdef[0m [1;34mremove_strawberry[0m(contacts)
+    [1;34m20[0m:   contacts.each [32mdo[0m |person, contact_details_hash|
+    [1;34m21[0m:     contact_details_hash.each [32mdo[0m |atribute, data|
+ => [1;34m22[0m:       binding.pry
+    [1;34m23[0m:     [32mend[0m 
+    [1;34m24[0m:   [32mend[0m
+    [1;34m25[0m: [32mend[0m
+
