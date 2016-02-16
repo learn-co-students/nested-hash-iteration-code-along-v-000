@@ -13,7 +13,19 @@ require 'pry'
   #     favorite_icecream_flavors: ["strawberry", "cookie dough", "mint chip"]
   #   }
   # }
-  
+    
+#def remove_strawberry(contacts)
+ # contacts.each do |key,value|
+  #  value.each do |attribute,data|
+   #   if attri
+
 def remove_strawberry(contacts)
+  contacts.each do |key,value|
+    value.each do |key,value|
+      if key == :favorite_icecream_flavors
+        value.delete_if {|x| x == "strawberry"}
+      end
+    end
+  end
 
 end
