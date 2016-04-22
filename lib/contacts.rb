@@ -15,5 +15,11 @@ require 'pry'
   # }
   
 def remove_strawberry(contacts)
-
+  contacts.each do |name, hash|
+    hash.each do|symbol, value|
+      if value.include?("strawberry") == true
+        value.delete("strawberry")
+      end
+    end
+  end
 end
