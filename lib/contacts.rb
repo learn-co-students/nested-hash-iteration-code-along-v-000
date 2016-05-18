@@ -15,5 +15,13 @@ require 'pry'
   # }
   
 def remove_strawberry(contacts)
-
+  contacts.each do | name, stats |
+    stats.each do | stat_keys, values|
+      if stat_keys == :favorite_icecream_flavors
+        if values.include?("strawberry")
+          values.delete("strawberry")
+        end
+      end
+    end
+  end
 end
