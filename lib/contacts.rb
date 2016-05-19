@@ -14,6 +14,14 @@ require 'pry'
   #   }
   # }
   
-def remove_strawberry(contacts)
+  #removes strawberry from Jon Snow's favourite ice cream flavors
 
+def remove_strawberry(contacts)
+  contacts.each {|person, contact_details_hash| 
+    contact_details_hash.each {|attribute, data| 
+      if attribute == :favorite_icecream_flavors
+        data.delete_if {|ice_cream| ice_cream == "strawberry"}
+      end
+    }
+  }
 end
