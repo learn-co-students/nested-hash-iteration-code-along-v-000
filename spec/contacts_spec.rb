@@ -20,6 +20,6 @@ describe "#remove_strawberry" do
 
   it "removes the strawberry ice cream from :favorite_ice_cream_flavors" do
     result = remove_strawberry(contacts)
-    expect(result["Freddy Mercury"][:favorite_ice_cream_flavors]).to_not include("strawberry")
+    expect(contacts["Freddy Mercury"][:favorite_ice_cream_flavors]).to_not include("strawberry")
   end
 end
