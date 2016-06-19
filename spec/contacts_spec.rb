@@ -4,6 +4,7 @@ require_relative '../lib/contacts.rb'
 
 describe "#remove_strawberry" do
   let :contacts do
+
     {
       "Jon Snow" => {
         name: "Jon",
