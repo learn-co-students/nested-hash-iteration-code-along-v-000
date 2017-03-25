@@ -14,7 +14,13 @@ require 'pry'
   #   }
   # }
 
+#def remove_strawberry(contacts)
+#  contacts["Freddy Mercury"][:favorite_ice_cream_flavors].shift
+#  contacts
+#end
+
 def remove_strawberry(contacts)
-  contacts["Freddy Mercury"][:favorite_ice_cream_flavors].shift
-  contacts
+  contacts.each do |person, info|
+    contacts[person][:favorite_ice_cream_flavors].delete_if{|flavor| flavor == "strawberry"}
+  end
 end
