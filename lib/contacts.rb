@@ -21,6 +21,7 @@ require 'pry'
 
 def remove_strawberry(contacts)
   contacts.each do |person, info|
-    contacts[person][:favorite_ice_cream_flavors].delete_if{|flavor| flavor == "strawberry"}
+    fav_flavors = contacts[person][:favorite_ice_cream_flavors]
+    fav_flavors.delete_if{|flavor| flavor == "strawberry"} if fav_flavors != nil
   end
 end
