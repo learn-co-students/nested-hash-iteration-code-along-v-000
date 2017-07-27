@@ -7,7 +7,7 @@
 
 ## Why Nested Hashes Matter
 
-So much of what we do in programming involves storing data in hashes. Often the hashes that we will encounter will have more than one level. As we get into the web, this will become abundantly clear. To build programs in the future, we'll absolutely need to get comfortable working with hashes. Let's get started!
+So much of what we do with programming involves storing data in hashes. Often the hashes that we will encounter will have more than one level. As we get into the web, this will become abundantly clear. To build programs in the future, we'll absolutely need to get comfortable working with hashes. Let's get started!
 
 
 ##Code Along Exercise
