@@ -89,7 +89,7 @@ Again, let's jump into our `binding.pry`. You should see:
 contacts.each do |person, contact_details_hash|
   contact_details_hash.each do |attribute, data|
     if attribute == :favorite_ice_cream_flavors
-      binding.pry
+        data.delete_if {|ice cream| ice_cream == "strawberry"}
     end
   end
 end
