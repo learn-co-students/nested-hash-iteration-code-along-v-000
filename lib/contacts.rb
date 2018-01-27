@@ -15,5 +15,16 @@ require 'pry'
   # }
   
 def remove_strawberry(contacts)
-
+  contacts.each{|name,data| 
+    if name == "Freddy Mercury"
+      data.each{|n, inner| 
+        #puts "Your name is #{name} inner data is #{inner}"
+        if n == :favorite_ice_cream_flavors
+          #puts "Your key is #{n} inner data is #{inner}"
+          inner.shift
+        end
+      }
+    end
+  }
+  contacts
 end
