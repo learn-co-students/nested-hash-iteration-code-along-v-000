@@ -17,7 +17,7 @@ require 'pry'
 def remove_strawberry(contacts)
   if contacts.detect("Freddy Mercury")
     if contacts["Freddy Mercury"].detect(:favorite_ice_cream_flavors)
-      contacts["Freddy Mercury"][:favorite_ice_cream_flavors].delete_if("strawberry")
+      contacts["Freddy Mercury"][:favorite_ice_cream_flavors].delete_if{|i| i == "strawberry"}
     end
   end
   contacts
