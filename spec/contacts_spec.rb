@@ -10,6 +10,11 @@ describe "#remove_strawberry" do
         email: "jon_snow@thewall.we",
         favorite_ice_cream_flavors: ["chocolate", "vanilla"]
       },
+      "William Barela" => {
+        name: "Freddy",
+        email: "freddy@mercury.com",
+        only_ice_cream_flavors: ["strawberry", "cookie dough", "mint chip"]
+      },
       "Freddy Mercury" => {
         name: "Freddy",
         email: "freddy@mercury.com",
