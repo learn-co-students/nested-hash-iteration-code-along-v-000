@@ -4,7 +4,7 @@ require 'pry'
   # contacts = {
   #   "Jon Snow" => {
   #     name: "Jon",
-  #     email: "jon_snow@thewall.we", 
+  #     email: "jon_snow@thewall.we",
   #     favorite_ice_cream_flavors: ["chocolate", "vanilla"]
   #   },
   #   "Freddy Mercury" => {
@@ -13,7 +13,11 @@ require 'pry'
   #     favorite_ice_cream_flavors: ["strawberry", "cookie dough", "mint chip"]
   #   }
   # }
-  
-def remove_strawberry(contacts)
 
+def remove_strawberry(contacts)
+  contacts.each do |name, attr_hash|
+    attr_hash.each do |attrib, value|
+      value.shift if(attrib == :favorite_ice_cream_flavors && value.include?('strawberry'))
+    end
+  end
 end
