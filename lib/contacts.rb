@@ -15,5 +15,18 @@ require 'pry'
   # }
   
 def remove_strawberry(contacts)
-
+  contacts.each do |k, v|
+    rtn = []
+    v.each do |k_, v_|
+      if k_ == :favorite_ice_cream_flavors
+        v_.each do |e|
+          if e != "strawberry"
+            rtn << e
+          end
+        end
+      end
+    end
+    v[:favorite_ice_cream_flavors] = rtn
+  end
+  contacts
 end
